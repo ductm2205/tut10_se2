@@ -4,10 +4,13 @@ package todo.abstract_factory;
  * by passing an information such as Shape
  */
 public class FactoryProducer {
-	//TO-DO: implement the getFactory() method
+	// TO-DO: implement the getFactory() method
 	public static AbstractFactory getFactory(boolean rounded) {
-		//check for 'rounded' status then return the correct Factory
-		return null;
+		// check for 'rounded' status then return the correct Factory
+		if (rounded) {
+			return new RoundedShapeFactory();
+		}
+		return new ShapeFactory();
 
 	}
 }

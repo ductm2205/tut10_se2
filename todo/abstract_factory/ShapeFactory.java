@@ -12,6 +12,11 @@ public class ShapeFactory extends AbstractFactory {
 		 * check for the shape type is equal to 'Rectangle' or 'Square' (ignore case)
 		 * then return the corresponding type
 		 */
+		if (shapeType.equalsIgnoreCase("rectangle")) {
+			return new Rectangle();
+		} else if (shapeType.equalsIgnoreCase("square")) {
+			return new Square();
+		}
 		return null;
 	}
 }
