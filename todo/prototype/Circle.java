@@ -5,7 +5,7 @@ public class Circle extends Shape {
 	// TO-DO: Declare the constructor
 	public Circle() {
 		// Set type to be similar with class name
-
+		this.type = "circle";
 	}
 
 	// TO-DO: Declare the draw() method
@@ -15,6 +15,6 @@ public class Circle extends Shape {
 		 * Only print out the draw() method to test. No need to implement the real
 		 * drawing
 		 */
-
+		System.out.println("Draw a circle");
 	}
 }
